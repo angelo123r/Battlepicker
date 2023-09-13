@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1256.0" prefWidth="1203.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TilePane hgap="50.0" layoutY="105.0" prefHeight="180.0" prefTileHeight="90.0" prefWidth="1203.0" vgap="10.0">
+         <children>
+            <ImageView fx:id="chickenImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickChicken" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/chicken.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bearImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickBear" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/bear.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="crocImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickCroc" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/crocodile.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="turtleImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickTurtle" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/turtle.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="elephantImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickElephant" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/elephant.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="chickenStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="bearStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="crocStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="turtleStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="elephantStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </TilePane>
+      <Button fx:id="selectBtn" layoutX="471.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#clickSelectBtn" prefHeight="86.0" prefWidth="261.0" text="Select">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="38.0" />
+         </font></Button>
+      <Text layoutX="405.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select 5 Characters">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="47.0" />
+         </font>
+      </Text>
+      <Text fx:id="eliminateText" layoutX="299.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminate 3 Enemy Characters">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="47.0" />
+         </font>
+      </Text>
+      <Button fx:id="eliminateBtn" layoutX="471.0" layoutY="1130.0" mnemonicParsing="false" onMouseClicked="#clickEliminateBtn" prefHeight="86.0" prefWidth="261.0" text="Eliminate">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="36.0" />
+         </font></Button>
+      <TilePane hgap="50.0" layoutY="330.0" prefHeight="180.0" prefTileHeight="90.0" prefWidth="1203.0" vgap="10.0">
+         <children>
+            <ImageView fx:id="bisonImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickBison" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/bison.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="birdImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickBird" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/hummingbird.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rabbitImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickRabbit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/rabbit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cheetahImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickCheetah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/cheetah.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pigImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickPig" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/pig.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="bisonStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="birdStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="rabbitStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="cheetahStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="pigStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </TilePane>
+      <TilePane hgap="50.0" layoutY="733.0" prefHeight="180.0" prefTileHeight="90.0" prefWidth="1203.0" vgap="10.0">
+         <children>
+            <ImageView fx:id="chickenEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickChickenEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/chicken.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bearEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickBearEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/bear.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="crocEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickCrocEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/crocodile.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="turtleEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickTurtleEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/turtle.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="elephantEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickElephantEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/elephant.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="chickenStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="bearStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="crocStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="turtleStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="elephantStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </TilePane>
+      <TilePane hgap="50.0" layoutY="947.0" prefHeight="180.0" prefTileHeight="90.0" prefWidth="1203.0" vgap="10.0">
+         <children>
+            <ImageView fx:id="bisonEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickBisonEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/bison.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="birdEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickBirdEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/hummingbird.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rabbitEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickRabbitEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/rabbit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cheetahEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickCheetahEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/cheetah.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pigEliminateImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickPigEliminate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/pig.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="bisonStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="birdStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="rabbitStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="cheetahStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="pigStats2" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>

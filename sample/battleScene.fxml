@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="575.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Battle">
+    <children>
+        <Text fx:id="finalCharacterHealth1" layoutX="99.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="106.13671875" />
+        <Text fx:id="finalCharacterHealth2" layoutX="692.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="106.13671875" />
+      <Text fx:id="winner" layoutX="345.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="219.0">
+         <font>
+            <Font name="Ebrima" size="34.0" />
+         </font></Text>
+      <TilePane fx:id="userTeam" alignment="CENTER" hgap="10.0" layoutX="35.0" layoutY="170.0" prefHeight="165.0" prefWidth="235.0">
+         <children>
+            <ImageView fx:id="userCharacterImage1" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="userCharacterImage2" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="userCharacterImage3" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="userCharacterImage4" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="userCharacterImage5" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+         </children>
+      </TilePane>
+      <TilePane fx:id="enemyTeam" alignment="CENTER" hgap="10.0" layoutX="628.0" layoutY="170.0" prefHeight="165.0" prefWidth="235.0">
+         <children>
+            <ImageView fx:id="enemyCharacterImage1" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="enemyCharacterImage2" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="enemyCharacterImage3" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="enemyCharacterImage4" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="enemyCharacterImage5" fitHeight="91.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../characters/dead.png" />
+               </image>
+            </ImageView>
+         </children>
+      </TilePane>
+      <Text fx:id="speedTieBreaker" layoutX="304.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="302.0" />
+      <Text layoutX="103.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER">
+         <font>
+            <Font name="Segoe UI Historic" size="43.0" />
+         </font>
+      </Text>
+      <Text layoutX="676.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENEMY">
+         <font>
+            <Font name="Segoe UI Historic" size="43.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
